@@ -47,7 +47,7 @@ function coinFlips(flips) {
   }
 return result;
 }
-console.log(coinFlips())
+//.log(coinFlips())
 export { coinFlips }
 /** Count multiple flips
  * 
@@ -63,9 +63,21 @@ export { coinFlips }
  */
 
 function countFlips(array) {
-
+let nt = 0;
+let nh = 0;
+let length = array.length;
+for(let i = 0; i < length; i++){
+  if(array[i] == "heads"){
+    nh++;
+  }
+  else if(array[i] == "tails"){
+    nt++;
+  }
 }
-
+return "{{ heads: "+ nh +", tails: "+ nt + " }}"
+}
+//console.log(countFlips());
+export{ countFlips }
 /** Flip a coin!
  * 
  * Write a function that accepts one input parameter: a string either "heads" or "tails", flips a coin, and then records "win" or "lose". 
