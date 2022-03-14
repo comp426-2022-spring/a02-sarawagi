@@ -10,14 +10,15 @@
  * @returns {string} 
  * 
  * example: coinFlip()
- * returns: heads
+ * returns: heads|tails
  * 
  */
 
 function coinFlip() {
-
+//return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
+return Math.random() > .5 ? ("heads") : ("tails")
 }
-
+console.log(coinFlip())
 /** Multiple coin flips
  * 
  * Write a function that accepts one parameter (number of flips) and returns an array of 
