@@ -41,9 +41,14 @@ export{ coinFlip }
  */
 
 function coinFlips(flips) {
-
+  const result = []
+  for(let i = 0; i < flips; i++){
+    result[i] = coinFlip();
+  }
+return result;
 }
-
+console.log(coinFlips())
+export { coinFlips }
 /** Count multiple flips
  * 
  * Write a function that accepts an array consisting of "heads" or "tails" 
