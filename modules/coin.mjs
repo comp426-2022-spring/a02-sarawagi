@@ -90,10 +90,16 @@ export{ countFlips }
  */
 
 function flipACoin(call) {
-
+let flipresult = coinFlip();
+if(flipresult == call){
+  return "{ call: '"+call+"', flip: '"+flipresult+"', result: 'win' }"
 }
-
-
+else if( flipresult != call){
+  return "{ call: '"+call+"', flip: '"+flipresult+"', result: 'lose' }"
+}
+}
+//console.log(flipACoin());
+export{ flipACoin }
 /** Export 
  * 
  * Export all of your named functions
