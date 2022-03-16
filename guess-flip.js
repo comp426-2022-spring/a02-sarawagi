@@ -7,7 +7,9 @@ const call = args.call;
 if(call === 'heads' || call === 'tails'){
     const result = flipACoin(call);
     console.log(result);
-    process.exit(1);
+   // process.exit(1);
 }
-console.log("Error: no input.");
-console.log("Usage: node guess-flip --call=[head|tails]");
+else{
+    console.log("Error: no input.");
+    console.log("Usage: node guess-flip --call=[head|tails]");
+}
