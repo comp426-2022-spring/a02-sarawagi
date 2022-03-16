@@ -74,7 +74,7 @@ for(let i = 0; i < length; i++){
     nt++;
   }
 }
-return "{{ heads: "+ nh +", tails: "+ nt + " }}"
+return "{ tails: "+ nt +", heads: "+ nh + " }"
 }
 //console.log(countFlips());
 export{ countFlips }
